@@ -68,6 +68,7 @@ All items and costs
 | LM35 Temperature Sensor   | 1         | 110| 110|
 | Pre-amplifier MAX4466 |1|500|500|
 |Condenser mic CA0106|1|20|20|
+
 |Stethoscope|1|840|840|
 | Others|1|1500|1500|
 |||TOTAL|4470|
