@@ -127,15 +127,20 @@ const PatientChatRoom = () => {
             trickle: false,
             stream: myVideoStream,
             //custom iceServer:
-            /* config: {
+            config: {
                 iceServers: [
                     {
-                        urls: ["turn:<EC2 instance public IP>:3478?transport=tcp"],//replace with turn server IP
-                        username: "<USERNAME>",//leave as <USERNAME>
-                        credential: "<PASSWORD>",//leave as <PASSWORD>
+                        urls: ["turn:20.115.34.56:3478?transport=tcp"],
+                        username: "medGenie",
+                        credential: "63NQo8dmDdhWakMzUcyJ",
+                    },
+                    {
+                        urls: ["turn:20.115.34.56:3478?transport=udp"],
+                        username: "medGenie",
+                        credential: "63NQo8dmDdhWakMzUcyJ",
                     }
                 ]
-            } */
+            }
         });
 
 

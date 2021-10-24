@@ -142,7 +142,22 @@ const DoctorChatRoom = () => {
         offerToReceiveVideo: true
       },
       trickle: false,
-      stream: myVideoStream
+      stream: myVideoStream,
+      //custom iceServer:
+      config: {
+        iceServers: [
+          {
+            urls: ["turn:20.115.34.56:3478?transport=tcp"],
+            username: "medGenie",
+            credential: "63NQo8dmDdhWakMzUcyJ",
+          },
+          {
+            urls: ["turn:20.115.34.56:3478?transport=udp"],
+            username: "medGenie",
+            credential: "63NQo8dmDdhWakMzUcyJ",
+          }
+        ]
+      }
     });
 
     peer.on('signal', (data) => {
